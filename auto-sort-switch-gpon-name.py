@@ -1,7 +1,7 @@
 olt=0
 pon=0
 ont=1
-allOlt=0
+allOlt=5
 allPon=16
 allOnt=35
 file = open('output.txt','w')
@@ -30,7 +30,7 @@ elif(choice=='2'):
                 pon=1
             while pon<=allPon:
                 print(f'''{code_name}-GX-OLT0{olt}:{pon},''')
-                output=code_name+"-GX-OLT0"+str(olt)+":"+str(pon)+","
+                output=code_name+"-GX-OLT0"+str(olt)+":"+str(pon)+":"+","
                 file.write(output)
                 
                 pon+=1
